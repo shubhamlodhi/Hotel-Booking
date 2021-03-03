@@ -10,9 +10,9 @@
 <body>
     <div>
         <div class="header">
-            <img src="./assests/images/logo.png" alt="logo" height="150px" width="200px">
+            <a href="./index.html"><img src="./assests/images/logo.png" alt="logo" height="150px" width="200px"></a>
             <!-- <p>Header Div</p> -->
-            <a href="./login.html" target="_blank">Login</a>
+            <a href="./login.html">Login</a>
         </div>
 
         <div class="content">
@@ -20,7 +20,26 @@
             <div>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                     alt="Radisson Blu Hotel"><br>
-                <a href="./payment.html" target="_blank">Book Now</a>
+                <!-- <a href="./payment.html" target="_blank">Book Now</a> -->
+                <form action="./payment.html">
+                    <label for="adults">Adults:</label>
+                    <input type="number" name="adults" id="adults" value=1 min="1" required>
+                    <br>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <label for="check-in">From Date:</label>
+                    <input type="date" name="check-in" id="check-in" required>
+                    <br>
+                    <label for="check-out">To Date:</label>
+                    <input type="date" name="check-out" id="check-out" required>
+                    <br>
+                    <label for="price">Total:</label>
+                    <input type="text" name="price" id="price" readonly>
+                    <br>
+                    <button type="submit">Book Now</button>
+                </form>
+
                 <h2>Radisson Blue Hotel</h2>
 
                 <div>
@@ -52,7 +71,7 @@
         </div>
         <div class="footer">
             <!-- <p>Footer Div</p> -->
-            <a href="./contact.html" target="_blank">Contact Us</a>
+            <a href="./contact.html">Contact Us</a>
             <br>
             <a href="https://www.facebook.com"><img src="./assests/images/facebook.png" alt="facebook" width="22px"
                     height="20px"></a>
